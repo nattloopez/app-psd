@@ -3,13 +3,13 @@
 #SBATCH --partition=brainlife
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=10          # use 10 CPU cores
-#SBATCH --time=00:30:00             # walltime 30 minutes (adjust if needed)
-#SBATCH --mem-per-cpu=4G             # memory per CPU core, adjust as needed
+#SBATCH --cpus-per-task=4           # fewer duplicates
+#SBATCH --time=01:00:00             
+#SBATCH --mem=64G                   # total memory 64 GB
 
-# Optional: output & error files
 #SBATCH --output=slurm-%j.out
 #SBATCH --error=slurm-%j.err
+
 
 
 #bl2bids
